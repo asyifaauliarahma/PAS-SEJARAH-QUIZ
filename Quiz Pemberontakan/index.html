@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ PEMBERONTAKAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="start-screen">
+        <h1>Selamat Datang di Quiz Pemberontakan!</h1>
+        <p>Jawablah pertanyaan dengan benar untuk menguji pengetahuanmu.</p>
+          <!-- Informasi nilai poin -->
+          <p id="point-info">setiap soal bernilai 10 point</p>
+        <button id="start-btn">Start</button>
+    </div>
+
+    <!-- Quiz Container -->
+    <div id="quiz-container" class="app" style="display: none;"> <!-- Disembunyikan saat pertama kali -->
+        <div class="quiz">
+            
+            <!-- Pertanyaan -->
+            <h2 id="question">Question goes here</h2>
+
+            <!-- Jawaban -->
+            <div id="answer-buttons">
+                <!-- Jawaban akan dimuat oleh JavaScript -->
+            </div>
+
+            <!-- Tombol untuk melanjutkan -->
+            <button id="next-btn" style="display: none;">Next</button> <!-- Disembunyikan secara default -->
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
